@@ -1,0 +1,10 @@
+services:
+  python-docker:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    hostname: python-docker
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./app:/app
