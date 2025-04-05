@@ -10,3 +10,7 @@ services:
       - "8000:8000"
     volumes:
       - ./proyectos:/proyectos
+      - root_data:/root
+
+volumes:
+  root_data:
