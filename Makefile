@@ -3,11 +3,11 @@
 help: _header
 	${info }
 	@echo Opciones:
-	@echo ----------------------
+	@echo ---------------------------
 	@echo build
-	@echo workspace
+	@echo workspace / workspace-extra
 	@echo clean
-	@echo ----------------------
+	@echo ---------------------------
 
 _header:
 	@echo ----------------
@@ -19,6 +19,9 @@ build:
 
 workspace:
 	@docker compose run --service-ports --rm python-docker /bin/bash
+
+workspace-extra:
+	@docker compose run --rm python-docker /bin/bash
 
 clean:
 	@docker compose down -v --remove-orphans
