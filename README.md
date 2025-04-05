@@ -104,7 +104,7 @@ make clean
 3. Inicializar Poetry:
 
     ```shell
-    poetry init --no-interaction
+    poetry init --no-interaction --python=^3.13
     ```
 
 4. Definir las dependencias necesarias:
