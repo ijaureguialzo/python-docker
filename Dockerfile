@@ -9,6 +9,8 @@ RUN apt update && apt install -y \
 
 RUN pip install poetry
 
+RUN poetry self add poetry-plugin-sort
+
 WORKDIR /proyectos
 
 EXPOSE 8000
