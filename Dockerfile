@@ -7,6 +7,8 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt update && apt install -y \
     nano
 
+RUN pip install poetry
+
 WORKDIR /app
 
 EXPOSE 8000
