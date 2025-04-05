@@ -9,6 +9,6 @@ RUN apt update && apt install -y \
 
 RUN pip install poetry
 
-WORKDIR /app
+WORKDIR /proyectos
 
 EXPOSE 8000
